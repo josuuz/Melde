@@ -1,0 +1,121 @@
+/* ==========================================================================
+   Meldê · design tokens
+   The jar is the system: label white and lid brown are the grounds, honey
+   gold is light reserved for product and action.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/archivo-latin.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/archivo-latin-ext.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  font-display: swap;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  /* ---- Primitives: the jar ------------------------------------------- */
+  --mel-50:  #FFF3D6;   /* creme: window tint, ink on dark */
+  --mel-100: #FCE6B0;
+  --mel-200: #F2CF7E;   /* creamed honey highlight */
+  --mel-400: #E5A52A;   /* mel dourado: product + action */
+  --mel-500: #D2911C;
+  --mel-600: #B8761A;   /* amber */
+  --mel-800: #7A4A10;
+
+  --marrom-950: #1E1712; /* lid shadow */
+  --marrom-900: #30251E; /* marrom profundo: the lid */
+  --marrom-700: #4A3A2F;
+  --marrom-500: #6E5A4B;
+  --marrom-300: #A8978A;
+
+  --branco: #FFFFFF;     /* label stock */
+  --alerta: #9E2A1E;
+
+  /* ---- Semantic ------------------------------------------------------- */
+  --ground: var(--branco);
+  --ink: var(--marrom-900);
+  --ink-soft: var(--marrom-500);
+  --rule: rgb(48 37 30 / 0.16);
+  --rule-strong: var(--marrom-900);
+
+  --ground-dark: var(--marrom-900);
+  --ground-deep: var(--marrom-950);
+  --ink-on-dark: var(--mel-50);
+  --ink-on-dark-soft: #CDBDA4;
+  --rule-on-dark: rgb(255 243 214 / 0.18);
+
+  --light: var(--mel-400);       /* the only saturated field color */
+  --ink-on-light: var(--marrom-900);
+  --focus: var(--marrom-900);
+  --focus-on-dark: var(--mel-200);
+
+  /* ---- Type ------------------------------------------------------------ */
+  --font: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --wdth-display: 125%;   /* spread, like the product */
+  --wdth-label: 118%;
+  --wdth-text: 100%;
+
+  --fs-micro: 0.75rem;                                   /* 12  label microtype */
+  --fs-note: 0.875rem;                                   /* 14  captions, legal */
+  --fs-body: 1.0625rem;                                  /* 17  running text */
+  --fs-lead: clamp(1.125rem, 0.95rem + 0.6vw, 1.5rem);   /* 18-24 */
+  --fs-h3: clamp(1.375rem, 1rem + 1.4vw, 2.25rem);       /* 22-36 */
+  --fs-h2: clamp(2.25rem, 1rem + 5vw, 6.25rem);          /* 36-100 */
+  --fs-display: clamp(3rem, 0.6rem + 7.6vw, 8.75rem);    /* 48-140 hero */
+  --fs-mega: clamp(7rem, 1rem + 24vw, 27rem);            /* 112-432 "MEL." */
+
+  --lh-tight: 0.86;
+  --lh-head: 0.94;
+  --lh-text: 1.55;
+
+  /* ---- Layout: 12-column label grid, 8px module ----------------------- */
+  --margem: clamp(16px, 4.4vw, 72px);
+  --gutter: clamp(12px, 1.6vw, 28px);
+  --max: 1680px;
+  --header-h: 64px;
+
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+  --secao: clamp(88px, 10vw, 176px);
+
+  /* ---- Shape: square label stock, rounded glass --------------------- */
+  --r-0: 0;
+  --r-campo: 10px;
+  --r-janela: clamp(22px, 3vw, 52px);  /* the jar's shoulder */
+  --r-pill: 999px;
+  --hairline: 1px;
+  --rule-w: 3px;
+
+  /* ---- Depth -------------------------------------------------------- */
+  --sombra-produto: 0 30px 60px -28px rgb(30 23 18 / 0.55);
+  --sombra-selo: 0 14px 28px -16px rgb(122 74 16 / 0.75);
+
+  /* ---- Motion: viscous, never springy ------------------------------- */
+  --ease-mel: cubic-bezier(0.2, 0.7, 0.1, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-hover: 180ms;
+  --dur-ui: 320ms;
+  --dur-reveal: 900ms;
+  --dur-entrada: 1200ms;
+}
+
+@media (max-width: 720px) {
+  :root { --header-h: 56px; }
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-28T12:00:00Z",
+  "title": "Design System: Meldê",
+  "extensions": {
+    "colorMeta": {
+      "mel-400": { "role": "primary", "displayName": "Mel Dourado", "canonical": "#E5A52A", "tonalRamp": ["#7A4A10", "#B8761A", "#D2911C", "#E5A52A", "#F2CF7E", "#FCE6B0", "#FFF3D6", "#FFFAEB"] },
+      "mel-200": { "role": "secondary", "displayName": "Mel Batido", "canonical": "#F2CF7E", "tonalRamp": ["#7A4A10", "#B8761A", "#D2911C", "#E5A52A", "#F2CF7E", "#FCE6B0", "#FFF3D6", "#FFFAEB"] },
+      "mel-600": { "role": "secondary", "displayName": "Âmbar", "canonical": "#B8761A", "tonalRamp": ["#3D250A", "#7A4A10", "#9A5E15", "#B8761A", "#D2911C", "#E5A52A", "#F2CF7E", "#FCE6B0"] },
+      "mel-800": { "role": "secondary", "displayName": "Âmbar Escuro", "canonical": "#7A4A10", "tonalRamp": ["#2A1905", "#4A2D0A", "#7A4A10", "#9A5E15", "#B8761A", "#D2911C", "#F2CF7E", "#FFF3D6"] },
+      "mel-50": { "role": "neutral", "displayName": "Creme", "canonical": "#FFF3D6", "tonalRamp": ["#7A4A10", "#B8761A", "#D2911C", "#E5A52A", "#F2CF7E", "#FCE6B0", "#FFF3D6", "#FFFAEB"] },
+      "branco": { "role": "neutral", "displayName": "Branco do Rótulo", "canonical": "#FFFFFF", "tonalRamp": ["#1E1712", "#30251E", "#4A3A2F", "#6E5A4B", "#A8978A", "#CDBDA4", "#F4EFEA", "#FFFFFF"] },
+      "marrom-900": { "role": "neutral", "displayName": "Marrom Profundo (a tampa)", "canonical": "#30251E", "tonalRamp": ["#1E1712", "#30251E", "#4A3A2F", "#6E5A4B", "#8A7768", "#A8978A", "#CDBDA4", "#F4EFEA"] },
+      "marrom-950": { "role": "neutral", "displayName": "Sombra da Tampa", "canonical": "#1E1712", "tonalRamp": ["#1E1712", "#30251E", "#4A3A2F", "#6E5A4B", "#8A7768", "#A8978A", "#CDBDA4", "#F4EFEA"] },
+      "marrom-700": { "role": "neutral", "displayName": "Marrom Médio", "canonical": "#4A3A2F", "tonalRamp": ["#1E1712", "#30251E", "#4A3A2F", "#6E5A4B", "#8A7768", "#A8978A", "#CDBDA4", "#F4EFEA"] },
+      "marrom-500": { "role": "neutral", "displayName": "Marrom Suave", "canonical": "#6E5A4B", "tonalRamp": ["#1E1712", "#30251E", "#4A3A2F", "#6E5A4B", "#8A7768", "#A8978A", "#CDBDA4", "#F4EFEA"] },
+      "marrom-300": { "role": "neutral", "displayName": "Marrom Névoa", "canonical": "#A8978A", "tonalRamp": ["#1E1712", "#30251E", "#4A3A2F", "#6E5A4B", "#8A7768", "#A8978A", "#CDBDA4", "#F4EFEA"] },
+      "ink-on-dark-soft": { "role": "neutral", "displayName": "Creme Apagado", "canonical": "#CDBDA4", "tonalRamp": ["#1E1712", "#30251E", "#4A3A2F", "#6E5A4B", "#8A7768", "#A8978A", "#CDBDA4", "#F4EFEA"] },
+      "alerta": { "role": "tertiary", "displayName": "Alerta", "canonical": "#9E2A1E", "tonalRamp": ["#3A0F0A", "#5E1912", "#7E2218", "#9E2A1E", "#BF4A3C", "#D9776B", "#EDAEA6", "#F9E3E0"] }
+    },
+    "typographyMeta": {
+      "mega": { "displayName": "Mega", "purpose": "Uma palavra por página (\"MEL.\"), preenchida pela foto macro da textura." },
+      "display": { "displayName": "Display", "purpose": "Título do hero, caixa-alta expandida em linhas escritas à mão." },
+      "headline": { "displayName": "Headline", "purpose": "Títulos de painel; cada painel ajusta o clamp dentro de 36–100px." },
+      "title": { "displayName": "Title", "purpose": "Termos de tabela e itens de lista, caixa-alta semi-expandida." },
+      "lead": { "displayName": "Lead", "purpose": "Frase de apoio sob o título, 24–34ch." },
+      "body": { "displayName": "Body", "purpose": "Texto corrido em largura normal." },
+      "note": { "displayName": "Note", "purpose": "Legendas, legal e notas em tinta suave." },
+      "label": { "displayName": "Label", "purpose": "Microtipo de rótulo: termos de tabela, peso líquido, rótulos de campo." },
+      "code": { "displayName": "Code", "purpose": "Códigos de painel na linha de corte e a nota das janelas." }
+    },
+    "shadows": [
+      { "name": "sombra-produto", "value": "0 30px 60px -28px rgb(30 23 18 / 0.55)", "purpose": "Objetos físicos: pote, rótulo." },
+      { "name": "sombra-produto-recorte", "value": "drop-shadow(0 36px 40px rgb(30 23 18 / 0.28))", "purpose": "Pote recortado (filter) no hero e no P-06." },
+      { "name": "sombra-selo", "value": "0 14px 28px -16px rgb(122 74 16 / 0.75)", "purpose": "Hover do selo dourado." },
+      { "name": "sombra-selo-escuro", "value": "0 14px 28px -16px rgb(30 23 18 / 0.8)", "purpose": "Hover do selo escuro." },
+      { "name": "sombra-lacre", "value": "0 18px 30px -22px rgb(30 23 18 / 0.6)", "purpose": "Faixa lacre inclinada sobre o painel seguinte." },
+      { "name": "sombra-frente", "value": "0 50px 80px -56px rgb(30 23 18 / 0.6)", "purpose": "Vidro do rótulo frontal em escala de parede." },
+      { "name": "foco", "value": "outline: 3px solid #30251E; outline-offset: 3px", "purpose": "Foco visível; mel-200 sobre fundo escuro." },
+      { "name": "foco-campo", "value": "0 0 0 4px rgb(48 37 30 / 0.16)", "purpose": "Halo do campo em foco, com borda marrom-900." }
+    ],
+    "motion": [
+      { "name": "ease-mel", "value": "cubic-bezier(0.2, 0.7, 0.1, 1)", "purpose": "Viscoso: revelações, deslocamentos, entrada do hero." },
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Transições de interface." },
+      { "name": "dur-hover", "value": "180ms", "purpose": "Hover de cor e sublinhado." },
+      { "name": "dur-ui", "value": "320ms", "purpose": "Estados de interface, picker, troca do código na tampa." },
+      { "name": "dur-reveal", "value": "900ms", "purpose": "Revelação de títulos por linha (atraso 80ms por linha)." },
+      { "name": "dur-entrada", "value": "1200ms", "purpose": "Entrada única do hero (janela 1300ms, pote 1400ms, escalonados 90–620ms)." },
+      { "name": "parallax-janela", "value": "factor 0.04–0.06, scale 1.14", "purpose": "Imagens dentro de janelas; zero com movimento reduzido." },
+      { "name": "lacre-trilho", "value": "0.22 × scroll", "purpose": "Deslocamento do texto do lacre com a rolagem." },
+      { "name": "fio-mel", "value": "largura 18→7.5px desktop, 10→4.2px celular; borda #A8661A; corpo #E5A52A; brilho #F2CF7E; reflexo #FFF8E6; ponta a 86% da tela", "purpose": "Fio de mel contínuo desenhado pela rolagem; inteiro com movimento reduzido." }
+    ],
+    "breakpoints": [
+      { "name": "hero-pilha", "value": "720px" },
+      { "name": "formulario-uma-coluna", "value": "560px" },
+      { "name": "tampa-sem-nav", "value": "860px" },
+      { "name": "colunas-empilham", "value": "900px" },
+      { "name": "tampa-sem-painel", "value": "1080px" },
+      { "name": "max", "value": "1680px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Selo (botão principal)",
+      "kind": "button",
+      "refersTo": "selo",
+      "description": "Ação principal: pílula dourada com ponto marrom que carrega o circunflexo como seta.",
+      "html": "<a class=\"ds-selo\" href=\"#\"><span>Quero experimentar</span><span class=\"ds-selo__ponto\"><svg class=\"ds-ic\" viewBox=\"0 0 24 24\" style=\"transform:rotate(90deg)\"><path d=\"M4 15l8-4.62 8 4.62\"/></svg></span></a>",
+      "css": ".ds-selo { display: inline-flex; align-items: center; gap: 18px; min-height: 58px; padding: 7px 7px 7px 28px; border-radius: 999px; background: #E5A52A; color: #30251E; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 0.875rem; font-weight: 800; font-stretch: 118%; letter-spacing: 0.1em; text-transform: uppercase; line-height: 1; text-decoration: none; white-space: nowrap; transition: background-color 180ms ease, box-shadow 320ms cubic-bezier(0.16, 1, 0.3, 1), transform 180ms ease; } .ds-selo__ponto { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: #30251E; color: #FFF3D6; font-size: 18px; transition: transform 320ms cubic-bezier(0.2, 0.7, 0.1, 1); } .ds-ic { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; } .ds-selo:hover { background: #F2CF7E; box-shadow: 0 14px 28px -16px rgb(122 74 16 / 0.75); } .ds-selo:hover .ds-selo__ponto { transform: translateX(4px); } .ds-selo:active { transform: scale(0.98); } .ds-selo:focus-visible { outline: 3px solid #30251E; outline-offset: 3px; }"
+    },
+    {
+      "name": "Selo escuro",
+      "kind": "button",
+      "refersTo": "selo-escuro",
+      "description": "Ação sobre fundo dourado (envio da lista de espera).",
+      "html": "<div style=\"background:#E5A52A;padding:24px\"><button class=\"ds-selo-escuro\" type=\"button\"><span>Quero Meldê</span><span class=\"ds-selo-escuro__ponto\"><svg class=\"ds-ic2\" viewBox=\"0 0 24 24\" style=\"transform:rotate(90deg)\"><path d=\"M4 15l8-4.62 8 4.62\"/></svg></span></button></div>",
+      "css": ".ds-selo-escuro { display: inline-flex; align-items: center; gap: 18px; min-height: 58px; padding: 7px 7px 7px 28px; border: 0; border-radius: 999px; background: #30251E; color: #FFF3D6; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 0.875rem; font-weight: 800; font-stretch: 118%; letter-spacing: 0.1em; text-transform: uppercase; line-height: 1; cursor: pointer; transition: background-color 180ms ease, box-shadow 320ms cubic-bezier(0.16, 1, 0.3, 1), transform 180ms ease; } .ds-selo-escuro__ponto { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%; background: #E5A52A; color: #30251E; font-size: 18px; transition: transform 320ms cubic-bezier(0.2, 0.7, 0.1, 1); } .ds-ic2 { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; } .ds-selo-escuro:hover { background: #4A3A2F; box-shadow: 0 14px 28px -16px rgb(30 23 18 / 0.8); } .ds-selo-escuro:hover .ds-selo-escuro__ponto { transform: translateX(4px); } .ds-selo-escuro:active { transform: scale(0.98); } .ds-selo-escuro:focus-visible { outline: 3px solid #30251E; outline-offset: 3px; }"
+    },
+    {
+      "name": "Campo",
+      "kind": "input",
+      "refersTo": "campo-entrada",
+      "description": "Campo de formulário creme com rótulo em microtipo, foco marrom e erro com ponto alerta.",
+      "html": "<label class=\"ds-campo\"><span class=\"ds-campo__rotulo\">Seu nome</span><input class=\"ds-campo__entrada\" placeholder=\"Como a gente te chama\"></label>",
+      "css": ".ds-campo { display: grid; gap: 8px; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; color: #30251E; } .ds-campo__rotulo { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-stretch: 118%; } .ds-campo__entrada { width: 100%; min-height: 58px; padding: 0 20px; border-radius: 10px; border: 2px solid transparent; background: #FFF3D6; color: #30251E; font: inherit; font-size: 1.0625rem; transition: border-color 180ms ease, box-shadow 180ms ease; } .ds-campo__entrada::placeholder { color: #8A7768; } .ds-campo__entrada:hover { border-color: rgb(48 37 30 / 0.25); } .ds-campo__entrada:focus { outline: none; border-color: #30251E; box-shadow: 0 0 0 4px rgb(48 37 30 / 0.16); } .ds-campo__entrada[aria-invalid='true'] { border-color: #9E2A1E; }"
+    },
+    {
+      "name": "Faixa da tampa",
+      "kind": "nav",
+      "refersTo": "tampa",
+      "description": "Barra fixa marrom: logotipo, código do painel atual, links com traço dourado, selo compacto.",
+      "html": "<header class=\"ds-tampa\"><strong class=\"ds-tampa__marca\">meldê</strong><span class=\"ds-tampa__painel\">P-03 · Modo de usar</span><nav class=\"ds-tampa__nav\"><a href=\"#\">Textura</a><a href=\"#\" aria-current=\"true\">Como usar</a><a href=\"#\">Produto</a></nav><a class=\"ds-tampa__cta\" href=\"#\">Experimentar</a></header>",
+      "css": ".ds-tampa { display: flex; align-items: center; gap: 24px; height: 64px; padding-inline: 24px; background: #30251E; color: #FFF3D6; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; box-shadow: 0 1px 0 rgb(255 243 214 / 0.08); } .ds-tampa__marca { font-size: 1.5rem; font-weight: 800; } .ds-tampa__painel { color: #CDBDA4; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-stretch: 118%; } .ds-tampa__nav { display: flex; gap: 24px; margin-left: auto; } .ds-tampa__nav a { color: #FFF3D6; text-decoration: none; font-size: 0.875rem; font-weight: 600; padding: 6px 0; background: linear-gradient(#E5A52A, #E5A52A) 0 100% / 0 2px no-repeat; transition: background-size 320ms cubic-bezier(0.2, 0.7, 0.1, 1); } .ds-tampa__nav a:hover, .ds-tampa__nav a[aria-current='true'] { background-size: 100% 2px; } .ds-tampa a:focus-visible { outline: 3px solid #F2CF7E; outline-offset: 3px; border-radius: 4px; } .ds-tampa__cta { display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; background: #E5A52A; color: #30251E; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; font-stretch: 118%; text-decoration: none; } .ds-tampa__cta:hover { background: #F2CF7E; }"
+    },
+    {
+      "name": "Janela",
+      "kind": "card",
+      "refersTo": "janela",
+      "description": "Foto no ombro do pote, com contorno de corte afastado e nota pílula de imagem ilustrativa.",
+      "html": "<figure class=\"ds-janela\"><div class=\"ds-janela__img\"></div><figcaption class=\"ds-janela__nota\">Imagem ilustrativa</figcaption></figure>",
+      "css": ".ds-janela { position: relative; overflow: hidden; margin: 12px; width: 280px; aspect-ratio: 4 / 5; border-radius: clamp(22px, 3vw, 52px); background: #30251E; outline: 1px solid rgb(48 37 30 / 0.16); outline-offset: 8px; } .ds-janela__img { position: absolute; inset: 0; background: radial-gradient(80% 60% at 40% 35%, #F2CF7E, #E5A52A 45%, #B8761A 80%, #7A4A10); transition: transform 900ms cubic-bezier(0.2, 0.7, 0.1, 1); } .ds-janela:hover .ds-janela__img { transform: scale(1.04); } .ds-janela__nota { position: absolute; left: 14px; bottom: 14px; padding: 6px 10px; border-radius: 999px; background: rgb(30 23 18 / 0.66); color: #FFF3D6; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.06em; font-stretch: 118%; line-height: 1; text-transform: uppercase; }"
+    },
+    {
+      "name": "Linha de corte",
+      "kind": "custom",
+      "refersTo": "corte",
+      "description": "Abre cada painel: código P-0X puro e um fio tracejado de 1px até a margem.",
+      "html": "<p class=\"ds-corte\"><span>P-04</span></p>",
+      "css": ".ds-corte { display: flex; align-items: center; gap: 12px; margin: 0; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.14em; font-stretch: 118%; line-height: 1; color: #6E5A4B; } .ds-corte::after { content: ''; flex: 1; border-top: 1px dashed rgb(48 37 30 / 0.16); }"
+    },
+    {
+      "name": "Tabela do rótulo",
+      "kind": "custom",
+      "refersTo": "tabela",
+      "description": "Linhas de definição como a lateral do pote: fio de 3px no topo e fim, 1px entre linhas.",
+      "html": "<dl class=\"ds-tabela\"><div class=\"ds-tabela__linha\"><dt>Ingredientes</dt><dd>Mel</dd></div><div class=\"ds-tabela__linha\"><dt>Peso líquido</dt><dd>250 g</dd></div></dl>",
+      "css": ".ds-tabela { margin: 0; border-top: 3px solid #30251E; color: #30251E; font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; } .ds-tabela__linha { display: grid; grid-template-columns: 5fr 7fr; gap: 20px; align-items: baseline; padding: 14px 0 13px; border-bottom: 1px solid rgb(48 37 30 / 0.16); } .ds-tabela__linha:last-child { border-bottom: 3px solid #30251E; } .ds-tabela dt { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; font-stretch: 118%; } .ds-tabela dd { margin: 0; font-weight: 600; font-stretch: 118%; }"
+    },
+    {
+      "name": "Lacre",
+      "kind": "custom",
+      "refersTo": "lacre",
+      "description": "Faixa dourada inclinada que cruza a divisa entre painéis; frases separadas pelo circunflexo.",
+      "html": "<div class=\"ds-lacre\"><span>Mel, só que cremoso</span><svg class=\"ds-ic3\" viewBox=\"0 0 24 24\"><path d=\"M4 15l8-4.62 8 4.62\"/></svg><span>100% mel</span><svg class=\"ds-ic3\" viewBox=\"0 0 24 24\"><path d=\"M4 15l8-4.62 8 4.62\"/></svg><span>250 g</span></div>",
+      "css": ".ds-lacre { display: flex; align-items: center; gap: 28px; padding: 14px 24px; white-space: nowrap; overflow: hidden; background: #E5A52A; color: #30251E; border-block: 1px solid rgb(48 37 30 / 0.25); transform: rotate(-2deg); box-shadow: 0 18px 30px -22px rgb(30 23 18 / 0.6); font-family: Archivo, 'Helvetica Neue', Arial, sans-serif; font-size: 0.8125rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; font-stretch: 118%; } .ds-ic3 { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "O rótulo desenrolado",
+    "overview": "A página é o rótulo do pote Meldê aberto na horizontal. Cada seção é um painel do rótulo, numerado como um código de lote (P-01 a P-08), começando numa linha de corte tracejada. O pote dá as regras: o branco do rótulo e o marrom da tampa são os únicos fundos; o dourado do mel é luz, reservado para o produto, a fotografia e a ação. Janelas arredondadas como o ombro do vidro são recortadas no rótulo para mostrar a textura cremosa por trás.\n\nA densidade é de embalagem FMCG: tipografia enorme em caixa-alta expandida contra microtipo de rótulo espaçado, com saltos de escala de até 1:12 entre o título e a nota. Um único fio de mel atravessa a página, desenhado pela rolagem, e é o único elemento líquido do sistema. O movimento é viscoso, lento e nunca elástico. O sistema recusa o mel rústico (kraft, favos, abelhas, serifa sobre creme) e a landing de chocolate com escorridos emoldurando blocos coloridos.",
+    "keyCharacteristics": [
+      "Dois fundos (branco do rótulo, marrom da tampa) e um fundo profundo (sombra da tampa); o dourado é luz, não papel.",
+      "Uma família (Archivo variável) usada pelo eixo de largura: 125% para display, 118% para rótulo, 100% para texto.",
+      "Rótulo quadrado, vidro arredondado: painéis e tabelas sem raio, janelas de foto e botões arredondados.",
+      "Linha de corte tracejada com código \"P-0X\" abrindo cada painel; o nome do painel vive só na faixa da tampa.",
+      "Um fio de mel contínuo, preenchido e afunilado, com borda âmbar e gota na ponta.",
+      "O circunflexo do \"ê\" é a seta, o marcador e o separador."
+    ],
+    "rules": [
+      { "name": "The Jar Rule", "body": "Fundos de painel são só branco, marrom-900 ou marrom-950, com uma exceção: o painel da ação final pode ser inteiro mel-400. Creme é tinta de janela e de campo, nunca chão de painel.", "section": "colors" },
+      { "name": "The Light Rule", "body": "O dourado é luz: produto, foto, ação. Nunca carrega texto corrido nem rótulo pequeno sobre branco; sobre branco ele só aparece como forma (traço, ícone, borda) ou como palavra de escala mega preenchida pela textura do mel.", "section": "colors" },
+      { "name": "The Width Axis Rule", "body": "Hierarquia vem do eixo de largura antes do peso: 125% é voz de embalagem, 118% é microtipo, 100% é leitura. Nenhuma segunda família.", "section": "typography" },
+      { "name": "The Line Reveal Rule", "body": "Títulos grandes são quebrados em linhas (.linha) e revelados linha a linha; a quebra é escrita à mão no HTML, não deixada ao navegador.", "section": "typography" },
+      { "name": "The Object Shadow Rule", "body": "Só coisa que existe na mesa projeta sombra: pote, rótulo, lacre, selo em hover. Blocos de texto, tabelas e painéis nunca.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do abrir cada painel novo com a linha de corte e o código \"P-0X\" puro; o nome vai só na faixa da tampa.",
+      "Do colocar fotografia dentro de uma janela com o raio r-janela e o contorno de corte afastado, com a nota \"Imagem ilustrativa\" enquanto a imagem for autoral.",
+      "Do usar o selo dourado para a ação principal e o selo escuro quando o fundo já for dourado.",
+      "Do fazer setas, marcadores e separadores com o circunflexo girado; ícones utilitários (mais, menos, check, fechar, sacola) seguem a mesma grade de 24px com traço de 3px arredondado.",
+      "Do manter a hierarquia no eixo de largura: 125% display, 118% rótulo, 100% texto.",
+      "Do usar ease-mel e durações de 900–1400ms para qualquer revelação, com versão estática para movimento reduzido."
+    ],
+    "donts": [
+      "Don't usar creme (mel-50) como fundo de painel; ele é tinta de janela e de campo.",
+      "Don't escrever texto corrido ou rótulo pequeno em dourado sobre branco.",
+      "Don't adicionar um segundo elemento líquido: nada de escorridos emoldurando bordas de painel ou blocos coloridos; o único mel que escorre é o fio contínuo.",
+      "Don't usar favos, hexágonos decorativos, abelhas, kraft ou serifa sobre creme.",
+      "Don't colocar sombra em blocos de texto, tabelas ou painéis; sombra é de objeto.",
+      "Don't trazer uma segunda família tipográfica nem um conjunto de ícones de terceiros.",
+      "Don't usar molas ou overshoot no movimento."
+    ]
+  }
+}

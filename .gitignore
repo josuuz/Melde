@@ -1,0 +1,15 @@
+# Material bruto e capturas de revisão (pesados, só locais)
+.impeccable/raw/
+.impeccable/review/
+.impeccable/questions/
+.playwright-mcp/
+
+# Referências de humor e renders locais na raiz (imagens de terceiros / rascunhos)
+/*.jpg
+/*.jpeg
+/*.png
+
+.vercel
+.DS_Store
+Thumbs.db
+__pycache__/
